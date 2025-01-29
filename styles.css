@@ -1,0 +1,294 @@
+*{
+  max-width: 100%;
+  box-sizing: border-box;
+  border: none;
+}
+.container::after{
+  content: none;
+}
+
+
+.{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+   font-size: 1rem;
+  background: #f5f5f5; /* Light gray background */
+  font-family: Arial, sans-serif; /* Clean font */
+}
+
+header{
+    background: #000000;
+    color:  rgba(77, 204, 98, 0.589);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #696969; /* Set link color */
+    font-size: 1rem; /* Adjust font size */
+    font-weight: bold; /* Optional: Make text bold */
+    padding: 10px 15px;
+  }
+  
+  nav ul li a:hover {
+    color: #ffffff; /* Change color on hover */
+  }
+  
+
+section{
+    background: rgba(255, 255, 255, 0.9); /* Slightly off-white background */
+  padding: 30px; /* Space inside the section */
+  margin: 30px auto; /* Add spacing between sections */
+  width: 80%; /* Make it slightly smaller than full width */
+  border-radius: 10px; /* Smooth, rounded edges */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+
+#about,#projects,#contact{
+   
+        width: 100%;
+        max-width: 1200px;
+        margin: 40 auto;
+        padding: 50px 20px;
+        
+        background-color: #fff; 
+    }
+    
+#about, #projects, #contact{
+  display: block;
+  float: none; /* Ensures no floating behavior */
+  position: relative; /* Resets any absolute positioning */
+}
+
+
+
+
+
+button{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #555;
+}
+#contact{
+    background-color: red;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: block;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f3f4f6;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  section {
+    display: block; /* Ensures sections stack vertically */
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .form-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+  
+  }
+  
+  
+  
+  .blue-panel {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #3b82f6; /* Bright Blue */
+        color: #fff; /* White Text */
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.6s ease;
+      }
+  
+  
+  .white-panel {
+    position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff; /* White Background */
+  color: green; /* Bright Blue Text */
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s ease;
+  }
+  
+  /* Form Box */
+  .form-box {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    background-color: #fff; /* White Background */
+    z-index: 3;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.6s ease;
+    color: #333; /* Dark Grey Text */
+  }
+  
+  /* Panel Text and Buttons */
+  .panel-text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .panel-button {
+    margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #fff; /* White Button */
+  color: #3b82f6; /* Bright Blue Text */
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+  
+  .panel-button:hover {
+    background-color: #3b82f6; /* Blue Hover */
+    color: #fff; /* White Text Hover */
+    transform: scale(1.1);
+  }
+  
+  /* Hover Effects: Move Panels */
+  .form-container:hover .blue-panel {
+    left: -50%;
+  }
+  
+  .form-container:hover .white-panel {
+    right: -50%;
+  }
+  
+  .form-container:hover .form-box {
+    left: 0;
+    width: 100%;
+  }
+  
+
+  h1, h2 {
+    margin-bottom: 20px; /* Adjust spacing below the heading */
+  }
+
+  p {
+    padding-top: 20px; /* Push the paragraph down */
+      line-height: 1.8; /* Adjust this value for more or less spacing */
+    
+  }
+
+
+
+#typing-text {
+  font-size: clamp(24px,6vw,48px);
+  font-weight: bold;
+  color: rgba(21, 228, 56, 0.589); /* Text color */
+  
+  white-space: normal; /* Prevent text wrapping */
+  overflow: hidden; /* Hides overflowed text */
+  display: block;
+  max-width: 90%;
+  margin: auto;
+  padding: 20px 10px;
+  
+}
+@media (max-width: 375px) {
+  #typing-text {
+    font-size: 22px;
+  }
+}
+
+
+@media (max-width:600px) {
+  .contactForm input,
+  .contactForm textarea,
+  .contactForm button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#typing-effect{
+  animation: blink 0.7s step-end infinite; /
+}
+

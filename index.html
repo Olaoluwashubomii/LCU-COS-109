@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width = device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<script src="index.js" defer></script>
+</head>
+
+<body>
+<!--Header and Navigation-->
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--About Me Section-->
+<section id="about">
+<h2>About Me</h2>
+<h2 id="typing-effect"></h2>
+<h2 id="typing-text"></h2>
+<p>
+   I'm a dedicated web developer with a passion for creating dynamic, responsive, and user-friendly websites. With a strong focus on innovative solutions, I thrive on learning and integrating cutting-edge technologies to bring ideas to life. Coding isn’t just a profession for me—it’s my creative outlet and a journey of constant growth.
+</p>
+</section>
+
+<!--Projects Section-->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>  Microsoft Website Optimization</h3>
+        <p>Collaborated with the Microsoft team to optimize their website, resulting in a 25% increase in user engagement. Utilized responsive design and intuitive navigation to enhance user experience.</p>
+    </p>
+    </div>
+    <div class="project">
+        <h3>GTBank Mobile App Redesign</h3>
+        <p>Paterned with GTBank to redesign their mobile app, resulting in a 90% increase in their user adoption. Developed a user-freindly interface and implemented features such s biometric login.</p>
+    </div>
+    
+    </section>
+
+    <section id="Contact">
+        <div class="form-container">
+          <div class="blue-panel">
+            <h2 class="panel-text">Hello, Welcome!</h2>
+            <button id="registerBtn" class="panel-button"> Get in touch</button>
+          </div>
+          <div class="white-panel">
+            <h2 class="panel-text">Welcome Back!</h2>
+            <button id="loginBtn" class="panel-button">Login</button>
+          </div>
+          <div class="form-box">
+            <form id="contactForm">
+              <h2>Contact Me</h2>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--Footer-->
+    <footer style="background-color: rgb(0, 0, 0); color: white; text-align: center; padding: 15px 0">
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    
+
+
+
+
+
+    </div>
+</section>
+
+
+</body>
+
+
+</html>
